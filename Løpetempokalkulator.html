@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Løpetempo-kalkulatoren</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="Løpetempokalkulator.css" />
+    <script src="Løpetempokalkulator.js"></script>
+  </head>
+
+  <body>
+    <h1>Løpetempo-kalkulatoren</h1>
+    <p>
+      Skriv inn tid og distanse, og beregn gjennomsnittshastigheten og tempoet
+    </p>
+    <h2>Tid (hh:mm:ss):</h2>
+    <input id="timer" type="number" placeholder="00" min="0" />
+    :
+    <input id="minutter" type="number" placeholder="00" min="0" />
+    :
+    <input id="sekunder" type="number" placeholder="00" min="0" />
+
+    <h2>Avstand:</h2>
+    <input id="avstand" type="number" placeholder="00" min="0" />
+    <select id="enhet">
+      <option value="km">km</option>
+      <option value="m">m</option>
+      <option value="mi">mi</option>
+    </select>
+    <button onclick="fyllInnEngelskMil()">Engelsk mil</button>
+    <button onclick="fyllInnHalvmaraton()">Halvmaraton</button>
+    <button onclick="fyllInnMaraton()">Maraton</button>
+    <br />
+    <br />
+    <button onclick="kalkuler()">Kalkuler</button>
+
+    <p id="feilmelding" style="color: red"></p>
+
+    <h2>Resultat:</h2>
+    <p id="tempo"></p>
+    <p id="hastighet"></p>
+  </body>
+</html>

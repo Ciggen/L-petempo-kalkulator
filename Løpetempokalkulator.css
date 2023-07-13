@@ -1,0 +1,48 @@
+/* Løpetempokalkulator.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+h1,
+h2 {
+  color: #333;
+}
+
+#resultat {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 80px; /* Juster denne verdien etter behov for å endre bredden for tidfeltene og avstandsfeltet */
+  height: 25px; /* Juster denne verdien etter behov for å endre høyden for tidfeltene og avstandsfeltet */
+}
+
+select {
+  width: 60px; /* Juster denne verdien etter behov for å endre bredden for rullegardinmenyen for målenhet */
+  height: 30px; /* Juster denne verdien etter behov for å endre høyden for rullegardinmenyen for målenhet */
+}
+
+#avstand {
+  width: 100px; /* Juster denne verdien etter behov for å endre bredden for avstandsfeltet */
+}
+
+#kalkuler {
+  width: 500px; /* Juster denne verdien etter behov for å endre bredden for kalkuler-knappen */
+  height: 60px; /* Juster denne verdien etter behov for å endre høyden for kalkuler-knappen */
+  font-weight: bold; /* Setter teksten til fet */
+  margin-top: 10px; /* Juster denne verdien etter behov for å endre avstanden fra linjen over */
+  border: none; /* Fjerner kantlinjer rundt knappen */
+  background-color: #337ab7; /* Setter bakgrunnsfargen for knappen */
+  color: #fff; /* Setter tekstfargen for knappen */
+  text-align: center; /* Senterjusterer teksten i knappen */
+  text-decoration: none; /* Fjerner understreking av teksten */
+  cursor: pointer; /* Viser en peker ved hover */
+  border-radius: 4px; /* Avrundede hjørner for knappen */
+}
+
+#marathon,
+#halfmarathon,
+#engelskmil {
+  width: 140px; /* Juster denne verdien etter behov for å endre bredden for knappene */
+  height: 40px; /* Juster denne verdien etter behov for å endre høyden for knappene */
+}
